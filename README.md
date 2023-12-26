@@ -1,1 +1,1 @@
-# my notes
+# my notes about everything
