@@ -1,10 +1,10 @@
-#### 1. Install Terraform:
+### 1. Install Terraform:
 ```
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 ```
 
-#### 2. Commands
+### 2. Commands
 
 ```
 terraform init
@@ -13,9 +13,13 @@ terraform apply
 terraform destroy
 ```
 
-#### dir: aws_ec2_ins
+### 3. Projects
 
-#### ssh to ec2 ins
+#### aws_ec2_ins
+
+
 ```
-ssh -i <path to ssh key> ubuntu@<publicIp>
+# ssh to ec2 ins
+
+$ ssh -i ~/.ssh/pthapa_aws_ec2 ubuntu@<publicIp>
 ```
