@@ -10,4 +10,12 @@ brew install hashicorp/tap/terraform
 terraform init
 terraform plan
 terraform apply
+terraform destroy
+```
+
+#### dir: aws_ec2_ins
+
+#### ssh to ec2 ins
+```
+ssh -i <path to ssh key> ubuntu@<publicIp>
 ```

@@ -1,0 +1,20 @@
+# Ignore .terraform directories and files
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+
+# Ignore crash.log, override files, and CLI configuration files
+*.tfvars
+*.tfvars.json
+terraform.rc
+
+# Ignore sensitive information such as secrets and API keys
+*.tfplan
+*.tfout
+
+# Ignore editor-specific files and directories
+.vscode/
+.idea/
+
+# Ignore any local build artifacts
+/bin/
