@@ -1,0 +1,19 @@
+---
+- name: Create a file with content on localhost
+  hosts: localhost
+  tasks:
+    - name: Create a file with content
+      file:
+        path: /tmp/pthapa.txt  # Specify the path where you want to create the file
+        state: touch
+        mode: '0644'  # Set the permissions of the file
+      become: yes
+
+    - name: Add content to the file
+      blockinfile:
+        path: /tmp/pthapa.txt  # Specify the path where you want to create the file
+        block: |
+          This is the content of the file.
+          You can add multiple lines here.
+          This is another line.
+      become: yes
